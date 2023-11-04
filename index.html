@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>BooksForUCSStudents</title>
+</head>
+<body>
+    <div class="container-fluid" id="beforeReq">
+        <div class="display-4 text-center mt-4">Books For UCS Students</div>
+        <div class="input-area mt-2 container" >
+            <select id="selYear" class="form-select">
+                <option value="none" class="selected disabled ">ChooseYear</option>
+                <option value="First_Year">FirstYear</option>
+                <option value="Second_Year">SecondYear</option>
+                <option value="Third_Year">ThirdYear</option>
+                <option value="Fourth_Year">FourthYear</option>
+                <option value="Fifth_Year">FifthYear</option>
+            </select>
+            <div class="mt-2 text-center">
+                <button class="btn btn-primary" id="searchBtn">SearchBook</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-4 p-3" id="afterReq">
+        <div class="text-start">
+            <button class="btn btn-primary rounded-circle" id="backBtn"><</button>
+        </div>
+        <div id="books" class="d-flex row justify-content-center mt-2">
+        </div>
+    </div>
+</body>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
+</html>
