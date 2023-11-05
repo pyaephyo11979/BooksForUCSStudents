@@ -1,4 +1,9 @@
-
+#logo{
+    text-align: center;
+}
+.UCSLogo{
+    width: 200px;
+}
 .book{
     width: 300px;
 }
