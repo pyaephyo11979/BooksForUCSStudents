@@ -23,7 +23,7 @@ btn.addEventListener("click",()=>{
             <h5>${book.year}</h5>
             </div>
             <div class="card-footer">
-            <a href="${book.url}"  class="btn btn-info">View <i class="fas fa-book-open"></i></a>
+            <a href="${book.url}" target="_blank"  class="btn btn-info">View <i class="fas fa-book-open"></i></a>
             </div>
             </div>
             `
