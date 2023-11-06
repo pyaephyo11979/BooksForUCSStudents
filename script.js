@@ -18,9 +18,11 @@ btn.addEventListener("click",()=>{
 
             bookDisplay.innerHTML+=`
             <div class="card book col-12 col-lg-4 m-1">
+            <div class="card-header">
+            <h4 class="card-title">${book.name}</h4>
+            </div>
             <div class="card-body">
-            <h4>${book.name}</h4>
-            <img src="${book.img}" class="card-img-top img-fluid" style="width:100px;">
+            <img src="${book.img}" class="card-img-top img-fluid" style="width:100%;">
             </div>
             <div class="card-body">
             <h5>${book.year}</h5>
