@@ -4,12 +4,13 @@ let btn=document.querySelector("#searchBtn");
 let beforeReqPage=document.querySelector("#beforeReq");
 let afterReqPage=document.querySelector("#afterReq");
 let backBtn=document.querySelector("#backBtn");
+const key="uCsBoOkSaPI2026Batch"
 afterReqPage.style.display="none";
 btn.addEventListener("click",()=>{
     let selectedYear=year.options[year.selectedIndex].value;
     bookDisplay.innerHTML = ''; // clear the book display
     afterReqPage.style.display="block";
-    fetch(`https://ucsbooksapi.onrender.com/books/year/${selectedYear}`)
+    fetch(`https://ucsbooksapi.onrender.com/books/year/${selectedYear}/?apikey=${key}`)
     .then(res=>res.json())
     .then((data)=>{
         let books=data;
