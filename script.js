@@ -10,10 +10,10 @@ btn.addEventListener("click",()=>{
     let selectedYear=year.options[year.selectedIndex].value;
     bookDisplay.innerHTML = ''; // clear the book display
     afterReqPage.style.display="block";
-    fetch(`https://ucsbooksapi.onrender.com/books/year/${selectedYear}/?apikey=${key}`)
+    fetch(`https://ucsbooksapi.onrender.com/api/books?filter[year]=${selectedYear}&sort[name]=1`)
     .then(res=>res.json())
-    .then((data)=>{
-        let books=data;
+    .then((Dt)=>{
+        let books=Dt.data;
         console.log(books.img);
         books.forEach(book=>{
 
